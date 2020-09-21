@@ -1,0 +1,139 @@
+// ----------------- GENERAL APP STYLING
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Grandstander', cursive;
+  color: rgb(70, 53, 29);
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(70, 53, 29); 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #745937; 
+  }
+}
+
+
+// -------------------  BORDER STYLING  ---------------------
+
+#left-border, #right-border, #top-border, #bottom-border {
+  background-color: rgb(104, 74, 56);
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+  // box-shadow: 0 0 10px grey;
+  position: fixed;
+  z-index: 5
+}
+
+#left-border,#right-border {
+  top: 0;
+  bottom: 0;
+  width: 50px;
+}
+
+#top-border,#bottom-border {
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+#top-border {
+  top: 0;
+}
+#bottom-border {
+  bottom: 0;
+}
+#left-border {
+  left: 0;
+}
+#right-border {
+  right: 0;
+}
+
+.border-shadow {
+  box-shadow: inset 0 0 20px 5px rgb(134, 120, 106);
+  margin: -10px 0 50px 0;
+  height: 100vh;
+}
+
+// ------------------  PAGE CONTAINER STYLING  ---------------------
+
+
+.page-container {
+  padding: 50px;
+  height: 100vh;
+}
+
+.background-standard {
+  background-color: rgb(202, 188, 160);
+  background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");}
+
+
+// ------------------ GAME CLASS COLOURS --------------------
+
+.class-demonhunter {
+  color: rgb(163, 48, 201);
+}
+
+.class-druid {
+  color: rgb(255 , 125, 10);
+}
+
+.class-hunter {
+  color: rgb(171, 212, 115);
+}
+
+.class-mage {
+  color: rgb(105, 204, 240);
+}
+
+.class-paladin {
+  color: rgb(245, 140, 186);
+}
+
+.class-priest {
+  color: rgb(255, 255, 255);
+}
+
+.class-rogue {
+  color: rgb(255, 245, 105);
+}
+
+.class-shaman {
+  color: rgb(0 , 112, 222);
+}
+
+.class-warlock {
+  color: rgb(148, 130, 201);
+}
+
+.class-warrior {
+  color: rgb(199, 156, 110);
+}
+
+
+//  ---------------- BACKGROUNDS AND VISIBILITY -------------------
+
+.hide {
+  visibility: hidden;
+}
+
+.list-background {
+  box-shadow: 0 0 10px rgb(155, 145, 133);
+  background-color: rgb(119, 105, 87);
+  border-style: groove;
+  border-width: 7px;
+  border-color: rgb(192, 168, 137);
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+}

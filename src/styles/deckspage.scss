@@ -1,0 +1,158 @@
+
+//  --------------- SELECT CLASS SECTION ---------------------
+.class-container {
+  text-align: center;
+
+  .class-div {
+    transition: all 1s ease;
+  }
+
+  .class-div:hover {
+    cursor: pointer;
+  }
+
+  .class-title {
+    margin: 5px;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+
+  .class-flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+
+    .class-name {
+      margin: 0;
+    }
+
+    .class-icon {
+      height: 70px;
+      position: relative;
+      transition: top ease 0.2s;
+      top: 0;
+
+      &:hover {
+        top: -7px;
+      }
+    }
+  }
+}
+
+//  --------------- DECK BUILDER SECTION ---------------------
+
+.decks-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+//  --------------- CARD LIST CONTAINERS ---------------------
+
+.card-list-container {
+  box-shadow: 0 0 10px rgb(94, 90, 85);
+  background-color: rgb(145, 134, 120);
+  border-style: groove;
+  border-width: 7px;
+  height: 500px;
+  border-color: rgb(192, 168, 137);
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s ease;
+  .card-list-title {
+    margin-top: 5px;
+  }
+}
+
+//  --------------- CARD LIST ---------------------
+.card-list {
+  text-align: left;
+  height: 90%;
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 2px;
+}
+
+//  ---------- LIST ITEMS ---------------------
+
+.card-container {
+  padding: 5px;
+  margin: 2px;
+  transition: all 1s ease;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// ----------------  CARD COMPARISON SECTION   ------------------
+
+.comparison-zone {
+  width: 40%;
+  margin: 20px;
+  margin-top: 60px;
+  display: flex;
+  box-shadow: 0 0 10px rgb(94, 90, 85);
+  background-color: rgb(145, 134, 120);
+  border-style: groove;
+  border-width: 7px;
+  border-color: rgb(192, 168, 137);
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  height: 350px;
+  align-items: center;
+
+  .card-compare {
+    width: 40%;
+
+    .main-card {
+      width: 100%;
+      transition: all 1s ease;
+    }
+    .no-card {
+      transform: scale(0.9);
+    }
+  }
+
+  .select-arrow {
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+    width: 100px;
+
+    &:hover {
+      top: -7px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+//  --------------- NOTIFICATIONS ---------------------
+
+.warning-text {
+  text-align: center;
+  padding: 100px 20px
+}
+
+.custom-class-notification {
+  color: white;
+}
+
+
+
+
+// --------------- LARGER SCREENS -----------------
+
+@media only screen and (min-width: 1600px) {
+  .comparison-zone {
+    height: 500px;
+  }
+
+  .card-list-container {
+    height: 700px;
+}
+}

@@ -1,0 +1,55 @@
+//  ---------------- CARD RARITY COLOURS ---------------------
+// common quality
+.rarity-1, .rarity-2 {
+  color: white;
+}
+// rare quality
+.rarity-3 {
+  color: rgb(37, 26, 192);
+}
+// epic quality
+.rarity-4 {
+  color: rgb(144, 31, 172);
+}
+// legendary quality
+.rarity-5 {
+  color: rgb(235, 171, 35);
+}
+
+
+//  --------------- CARD SPECIFIC DETAILS ---------------------
+
+.card-cost {
+  background-image: url('https://res.cloudinary.com/dy7eycl8m/image/upload/v1600621382/pngwave_48_hfjlda.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgb(70, 67, 67);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.card-name {
+  display: inline-block;
+  margin: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.no-card {
+  opacity: 0.5;
+}
+
+
+// -------------- POP UP CARD STYLING --------------
+//  popup coordinates are handled in the component
+
+.card-popup {
+  position: fixed;
+  height: 400px;
+  pointer-events:none;
+  z-index: 5;
+}

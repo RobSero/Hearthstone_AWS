@@ -1,0 +1,152 @@
+.landing-header {
+  height: 50%;
+  background-color: rgb(167, 137, 104);
+  background-image: url("https://res.cloudinary.com/dy7eycl8m/image/upload/v1600622071/pngwave_49_uvoxyj.png");
+  text-align: center;
+  color: white;
+  box-shadow: inset 0 0 20px 3px rgb(63, 62, 60);
+  z-index: 4;
+  .main-logo {
+    height: 150px;
+    margin-top: 5%;
+  }
+  .logo-subheader {
+    color: white;
+  }
+}
+
+//  ------------------ SPEECH BUBBLES ---------------------
+
+.speech {
+  position: fixed;
+  width: 300px;
+  top: 150px;
+  left: 50px;
+}
+
+.speech-right {
+  position: fixed;
+  width: 300px;
+  top: 80px;
+  right: 50px;
+}
+
+.start-button {
+  position: fixed;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  top: 60%;
+  width: 150px;
+  background-color: rgb(236, 197, 22);
+  z-index: 10;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 3px 3px rgba(161, 163, 161, 0.315);
+  border-style: groove;
+  border-width: 4px;
+  border-color: rgb(192, 168, 137);
+
+  &:hover {
+    box-shadow: 0 0 10px white;
+  }
+}
+
+.lower-landing {
+  height: 50%;
+  box-shadow: 0 0 10px rgb(94, 90, 85);
+  // background-color: rgb(145, 134, 120);
+  border-style: groove;
+  border-width: 7px;
+  border-color: rgb(192, 168, 137);
+  background-image: url("https://res.cloudinary.com/dy7eycl8m/image/upload/v1600680986/pngwave_58_djsmnk.png");
+  background-size: auto;
+  animation: shrink 5s infinite alternate;
+  background-repeat: repeat;
+}
+
+
+// ------------------- LOWER PAGE MOUSEMOVE EFFECT -------------------------
+
+.left-view {
+  background-image: url('https://res.cloudinary.com/dy7eycl8m/image/upload/v1600627381/pngwave_52_cbhh2j.png');
+  background-size: auto;
+  animation: shrink 5s infinite alternate;
+  background-repeat: repeat;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  z-index: -1;
+  white-space:nowrap;
+  transition: all 0.5s ease;
+  box-shadow: inset 0 0 200px rgb(158, 4, 4);
+  padding: 0;
+  border-right: groove;
+  border-width: 7px;
+  border-color: rgb(192, 168, 137);
+  
+
+  .character-flex {
+    display: flex;
+    width: 100vw;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding-top: 120px;
+  
+    .characters {
+      width: 200px;
+      position: relative;
+      bottom: 0;
+    }
+    #char1 {
+      width:300px
+    }
+    #char3 {
+      width:300px
+    }
+    #char4 {
+      width:250px
+    }
+  }
+}
+
+// ---------------------  RIGHT SIDE CARD SLIDER -------------------------
+
+.right-view {
+  z-index: -2;
+  height: 100%;
+  display: inline;
+  padding-top: 20px;
+
+
+.card-image {
+  width: 200px;
+  margin-top: 15px;
+}
+}
+
+
+// -------------------- ANIMATED BACKGROUND -------------------------
+
+@keyframes shrink {
+  0% {
+    background-position: 0% 110%;
+  }
+  100% {
+    background-position: 30% 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .right-view {
+  .card-image {
+    width: 200px;
+    margin-top: 80px;
+  }
+  }
+}
