@@ -1,6 +1,6 @@
 import axios from 'axios'
 // resets hourly
-const tempToken = 'USbTg89aZx2n2SLRoLjBlzezyD8hqAGcox'
+const tempToken = 'USeRJnF27oFIzq6ajVqSnEdQpLJQOcBzMy'
 
 
 export async function getCardData(className:string) {
